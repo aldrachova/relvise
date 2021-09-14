@@ -44,12 +44,27 @@ body {
 .wrapper {
   min-height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
   max-width: 1076px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.background {
+  position: relative;
+}
+
+.background img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
 }
 
 /* Header */
@@ -128,5 +143,116 @@ body {
 @media (max-width: 479px) {
   .nav__link {
     font-size: 18px;
+  }
+}
+
+/* Page */
+.page {
+  flex: 1 1 auto;
+}
+
+/* Main block */
+.main-block {
+  position: relative;
+}
+
+.main-block__body {
+  padding-top: 184px;
+  padding-bottom: 191px;
+  position: relative;
+  z-index: 2;
+  max-width: 400px;
+}
+
+@media (max-width: 992px) {
+  .main-block__body {
+    padding-top: 120px;
+  }
+}
+
+.main-block__body > *:not(:last-child) {
+  padding-bottom: 35px;
+}
+
+.main-block__title {
+  font-size: 58px;
+  font-weight: 800;
+  line-height: 138%;
+  letter-spacing: 0.2px;
+}
+
+@media (max-width: 779px) {
+  .main-block__title {
+    font-size: 42px;
+  }
+}
+
+.main-block__text {
+  color: #737373;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+}
+
+.main-block__buttons {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: -10px 0;
+}
+
+.main-block__button {
+  border-radius: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 36px;
+  min-height: 46px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 200%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+@media (max-width: 479px) {
+  .main-block__button {
+    flex: 1 1 100%;
+  }
+}
+
+@media (min-width: 479px) {
+  .main-block__button:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.main-block__button_orange {
+  background: #ff7b47;
+  color: #fff;
+}
+
+.main-block__button_border {
+  color: #0d5c63;
+  border: 1px solid #0d5c63;
+}
+
+.main-block__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 1300px) {
+  .main-block__image img {
+    object-position: right;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-block__image {
+    opacity: 0.5;
   }
 }
