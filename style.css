@@ -839,13 +839,13 @@ body {
 }
 
 .item-getintouch_active {
-  background: #252B42;
-  color:#ffffff;
+  background: #252b42;
+  color: #ffffff;
   padding: 80px 15px;
 }
 
 .item-getintouch_active .item-getintouch__button {
-  color:#ffffff;
+  color: #ffffff;
   border: 1px solid #ffffff;
 }
 
@@ -905,7 +905,6 @@ body {
 }
 
 @media (max-width: 992px) {
-
   .getintouch {
     padding: 50px 0;
   }
@@ -923,4 +922,59 @@ body {
   .getintouch__header {
     margin-bottom: 30px;
   }
+}
+
+/* Contact */
+.contact {
+  background-color: #ffffff;
+  padding: 42px 0;
+}
+
+.contact__content {
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 767px) {
+  .contact__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contact__content {
+    padding-right: 20px;
+  }
+}
+
+.contact__title {
+  font-size: 24px;
+  line-height: 133%;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+
+.contact__text {
+  line-height: 143%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.contact__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+  padding: 15px 40px;
+  background: #ff7b47;
+  border-radius: 5px;
+  color: #ffffff;
+  line-height: 200%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  transition: all 0.3s;
+}
+
+.contact__button:hover {
+  background: #aa5330;
 }
