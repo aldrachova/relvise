@@ -141,6 +141,10 @@ body {
   letter-spacing: 0.2px;
 }
 
+.nav__link:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 479px) {
   .nav__link {
     font-size: 18px;
@@ -219,6 +223,7 @@ body {
   line-height: 200%;
   text-align: center;
   margin: 10px 0;
+  transition: all 0.3s;
 }
 
 @media (max-width: 479px) {
@@ -235,12 +240,22 @@ body {
 
 .main-block__button_orange {
   background: #ff7b47;
-  color: #fff;
+  color: #ffffff;
+}
+
+.main-block__button_orange:hover {
+  background: #ffffff;
+  color: #ff7b47;
 }
 
 .main-block__button_border {
   color: #0d5c63;
   border: 1px solid #0d5c63;
+}
+
+.main-block__button_border:hover {
+  background-color: #0d5c63;
+  color: #ffffff;
 }
 
 .main-block__image {
@@ -800,6 +815,11 @@ body {
   text-align: center;
   letter-spacing: 0.2px;
   color: #ffffff;
+  transition: all 0.3s;
+}
+
+.subscribe__button:hover {
+  background: #ca6137;
 }
 
 @media (max-width: 810px) {
@@ -982,17 +1002,32 @@ body {
 /* Footer */
 .footer__top {
   background-color: #17213c;
-  padding: 50px 0;
+  padding: 35px 0;
 }
 
 .footer__row {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 -15px;
 }
 
 .footer__column {
-  flex: 0 1 20%;
-  padding: 0 15px;
+  flex: 0 1 16.667%;
+  padding: 15px;
+}
+
+.footer__column:last-child {
+  flex: 0 1 33.334%;
+}
+
+@media (max-width: 992px) {
+  .footer__column {
+    flex: 0 1 50%;
+  }
+
+  .footer__column:last-child {
+    flex: 0 1 100%;
+  }
 }
 
 .footer__label {
@@ -1055,3 +1090,40 @@ body {
 .contacts-footer__item_email {
   background: url("./img/footer/icon/email.svg") left no-repeat;
 }
+
+.footer__bottom {
+  padding: 25px 0;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  .footer__copy {
+    font-weight: 600;
+    line-height: 171%;
+    letter-spacing: 0.2px;
+    color: #737373;
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+  }
+  
+  .social__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: 767px) {
+    .footer__container {
+      flex-direction: column;
+    }
+
+    .footer__copy {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  }
