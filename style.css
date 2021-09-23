@@ -978,3 +978,80 @@ body {
 .contact__button:hover {
   background: #aa5330;
 }
+
+/* Footer */
+.footer__top {
+  background-color: #17213c;
+  padding: 50px 0;
+}
+
+.footer__row {
+  display: flex;
+  margin: 0 -15px;
+}
+
+.footer__column {
+  flex: 0 1 20%;
+  padding: 0 15px;
+}
+
+.footer__label {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+}
+
+.menu-footer__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.menu-footer__link {
+  display: inline-block;
+  font-weight: 600;
+  line-height: 171%;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+.menu-footer__link:hover {
+  text-decoration: underline;
+}
+
+.contacts-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-footer__item {
+  display: flex;
+  align-items: center;
+  padding-left: 34px;
+  line-height: 142%;
+  min-height: 30px;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.contacts-footer__item:hover {
+  text-decoration: underline;
+}
+
+.contacts-footer__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.contacts-footer__item_phone {
+  background: url("./img/footer/icon/phone.svg") left no-repeat;
+}
+
+.contacts-footer__item_map {
+  background: url("./img/footer/icon/map.svg") left no-repeat;
+}
+
+.contacts-footer__item_email {
+  background: url("./img/footer/icon/email.svg") left no-repeat;
+}
